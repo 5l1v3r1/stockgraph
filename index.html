@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Poopy</title>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script src="StockCompany.js" type="text/javascript"></script>
+        <script src="cookie.js" type="text/javascript"></script>
+        <script src="drawing.js" type="text/javascript"></script>
+        <script src="controller.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <center>
+            <canvas id="canvas" width="400" height="400" style="width: 200px; height: 200px">
+            </canvas>
+            <div id="companies">
+            </div>
+            <table>
+                <tr>
+                    <td>Market:</td>
+                    <td><input value="NASDAQ" id="add-market"></input></td>
+                </tr>
+                <tr>
+                    <td>Symbol:</td>
+                    <td><input value="" id="add-symbol"></input></td>
+                </tr>
+                <tr>
+                    <td>Amount:</td>
+                    <td><input value="1" id="add-amount"></input></td>
+                </tr>
+                <tr>
+                    <td>Color:</td>
+                    <td><input value="#FF0000" id="add-color"></input></td>
+                </tr>
+            </table>
+            <button onclick="controller.addCompanyPressed()">Add</button>
+        </cenetr>
+    </body>
+</html>
