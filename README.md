@@ -1,0 +1,1 @@
+This is an ugly, down to earth pie-chart utility for stocks.
