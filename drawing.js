@@ -24,7 +24,10 @@ drawing = (function() {
                 console.log(err);
                 return alert('Failed to get stock quote.');
             }
-            collective.push({color: company.color, price: price, idx: idx});
+            console.log(company);
+            collective.push({color: company.color,
+                             price: price * company.amount,
+                             idx: idx});
             if (collective.length == total) {
                 handleCollective(collective);
             }

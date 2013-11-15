@@ -38,9 +38,10 @@ var controller = (function () {
     
     function generateDiv(company) {
         var aDiv = $('<div></div>');
-        aDiv.text(company.amount + ' shares of ' + 
+        aDiv.html(company.amount + ' shares of ' + 
                   company.market + ':' + company.symbol +
-                  ' (' + company.color + ')');
+                  ' (<span style="color: ' + company.color + '">' +
+                  company.color + '</span>)');
         var removeButton = $('<button />', {text: 'Remove'});
         removeButton.click(function() {
             removeCompanyPressed(company.market, company.symbol);
